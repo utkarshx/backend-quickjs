@@ -13,6 +13,7 @@ if (APPLE AND NOT IOS)
 endif()
 
 set(qjs_cflags -Wall)
+set(qjs_cflags -fPIC)
 if(CMAKE_C_COMPILER_ID MATCHES "AppleClang|Clang")
     list(APPEND qjs_cflags
             -Wextra
